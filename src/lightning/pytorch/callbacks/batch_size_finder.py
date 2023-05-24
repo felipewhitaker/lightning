@@ -40,8 +40,8 @@ class BatchSizeFinder(Callback):
         mode: search strategy to update the batch size:
 
             - ``'power'``: Keep multiplying the batch size by 2, until we get an OOM error.
-            - ``'binsearch'``: Initially keep multiplying by 2 and after encountering an OOM error
-                do a binary search between the last successful batch size and the batch size that failed.
+            - ``'binsearch'``: Initially keep multiplying by 2 and after encountering an OOM error 
+            do a binary search between the last successful batch size and the batch size that failed.
 
         steps_per_trial: number of steps to run with a given batch size.
             Ideally 1 should be enough to test if an OOM error occurs,
